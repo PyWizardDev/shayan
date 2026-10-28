@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgent Message for Riyad</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ff4757;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: blink 1s infinite;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        /* Container to show images side by side */
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .prank-img {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(255, 71, 87, 0.3);
+        }
+        button {
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #ff6b81;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>RIYAD IS A DUMBA!</h1>
+    <p>Confirmed by the entire class.</p>
+
+    <!-- Both images are displayed here -->
+    <div class="img-container">
+        <img src="cooldumba.png" alt="Sheep" class="prank-img">
+        <img src="riyad.png" alt="Riyad Face" class="prank-img">
+    </div>
+
+    <button onclick="playPrank()">Click for Truth</button>
+
+    <script>
+        function playPrank() {
+            alert("Riyad, stop looking for a backend, you've been pranked!");
+        }
+    </script>
+
+</body>
+</html>
